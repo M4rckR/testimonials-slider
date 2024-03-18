@@ -5,3 +5,31 @@
 body {
     @apply font-m-inter 
 }
+
+
+.slide-right{
+    animation:slide-right 0.4s linear both alternate ;
+}
+    
+@keyframes slide-right{
+    0%{
+        transform:translateX(0) 
+    }100%{
+        transform:translateX(100px) 
+    } 
+}
+
+.slide-right-img{
+    animation:slide-right-img 0.4s linear both alternate;
+}
+    
+@keyframes slide-right-img{
+    0%{
+        transform:translateX(0) scale(79%)
+    }100%{
+        transform:translateX(100px) scale(79%)
+    } 
+}
+
+
+

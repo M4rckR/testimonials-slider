@@ -11,34 +11,31 @@
 </head>
 <body>
   <main class="my-16 container mx-auto md:flex md:items-center">
-    <section class="relative mx-4 flex justify-center  bg-[url('/images/pattern-bg.svg')] bg-center bg-no-repeat bg-contain mb-6 md:order-2 md:flex-1">
-      <img class="rounded-md shadow-md scale-[79%]" src="images/image-tanya.jpg" alt="imagen__perfil">
-      <div class="absolute bg-white h-10 flex items-center gap-7 bottom-6 md:bottom-4 lg:bottom-10 px-5 rounded-2xl shadow-md md:left-[20%] translate-x-[20%]">
-        <img class="h-4 w-3 cursor-pointer active:scale-110 transition-all duration-150" id="adelante" src="images/icon-prev.svg" alt="iamgen adelante">
-        <img class="h-4 w-3 cursor-pointer active:scale-110 transition-all duration-150" id="atras" src="images/icon-next.svg" alt="imagen atras">
+    <section class="relative mx-4 md:mx-16 flex justify-center  bg-[url('/images/pattern-bg.svg')] bg-center bg-no-repeat bg-contain mb-6 md:order-2 md:flex-1">
+      <img id="foto" class="rounded-md shadow-md scale-[79%] transition-all duration-300 " src="images/image-tanya.jpg" alt="imagen__perfil">
+      <div id="indicadores" class="absolute bg-white h-10 flex items-center gap-7 bottom-6 md:bottom-4 lg:bottom-10 px-5 rounded-2xl shadow-md left-[50%] -translate-x-[50%] md:left-[20%] md:translate-x-[20%]">
+        <img class="h-4 w-3 cursor-pointer active:scale-110 transition-all duration-150" id="atras" src="images/icon-prev.svg" alt="iamgen adelante">
+        <img class="h-4 w-3 cursor-pointer active:scale-110 transition-all duration-150" id="adelante" src="images/icon-next.svg" alt="imagen atras">
       </div>
     </section>
-    <section class="mx-4 bg-[url('/images/pattern-quotes.svg')] bg-[length:100px_90px] bg-no-repeat bg-top md:order-1 md:flex-1">
-      <p class="mx-4 text-m-dark-blue text-center md:text-left md:text-2xl ">  “ I’ve been interested in coding for a while but never taken the jump, until now. 
+    <section class="relative mx-4  md:flex-1">
+      <p id="contenido" class="mx-4 text-m-dark-blue text-center md:text-left md:text-2xl ">  “ I’ve been interested in coding for a while but never taken the jump, until now. 
         I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
         excited about the future. ”
       </p>
       <div class="mx-4 flex flex-col justify-center text-center mt-4 md:flex-row md:items-center md:gap-2 md:justify-start">
-        <p class="text-m-dark-blue font-bold md:text-lg">Tanya Sinclair</p>
-        <p class="text-sm font-light md:text-base">UX Engineer</p>
+        <p id="autor" class="text-m-dark-blue font-bold md:text-lg">Tanya Sinclair</p>
+        <p id="trabajo" class="text-sm font-light md:text-base">UX Engineer</p>
       </div>
-      <!-- “ If you want to lay the best foundation possible I’d recommend taking this course. 
-      The depth the instructors go into is incredible. I now feel so confident about 
-      starting up as a professional developer. ”
 
-      John Tarkpor
-      Junior Front-end Developer -->
+      <img class="absolute top-0 left-[50%] -translate-x-[50%] lg:-top-14 md:left-[24%] -md:translate-x-[24%]" src="images/pattern-quotes.svg" alt="">
+
     </section>
   </main> 
 
 
 
-  <script type="module" src="js/app.js"></script>
+  <script  src="js/app.js" type="module"></script>
 </body>
 </html>
 
